@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-package": "changeset version",
+    "release": "turbo run build --filter=!docs && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "turbo": "^1.10.2"
+  },
+  "name": "@progamo/progamo-design-system",
+  "description": "- [x] Text\r - [x] Title\r - [x] Box\r - [x] Button\r - [x] TextInput\r - [x] TextArea\r - [x] Checkbox\r - [x] Avatar\r - [x] MultiStep\r - [x] Icon\r - [x] Label\r - [x] Switch\r - [ ] Radio button\r - [ ] Chip\r - [ ] Breadcrumbs\r - [ ] Table\r - [ ] DataGrid\r - [ ] Tooltip\r - [ ] Picker\r - [ ] Tooltip\r - [ ] Dialog",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
